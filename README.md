@@ -51,4 +51,4 @@ Then you will see finder window with open project directory and message
 ---
 ## License
 
-TagsList is available under the MIT license. See the LICENSE file for more info.
+ATProjectGenerator is available under the MIT license. See the LICENSE file for more info.
