@@ -30,8 +30,36 @@ projectName="$3"
 author="$4"
 
 colorPrint "\n"
+
+while [ -z "$templateFolder" ]
+do
+    colorPrint "Enter path to template folder: "
+    read templateFolder
+done
+
 if [ -d "$templateFolder" ]
 then
+
+    while [ -z "$targetFolder" ]
+    do
+        colorPrint "Enter path to target folder: "
+        read targetFolder
+    done
+
+    while [ -z "$projectName" ]
+    do
+        colorPrint "Enter project name: "
+        read projectName
+    done
+
+    while [ -z "$author" ]
+    do
+        colorPrint "Enter the author name: "
+        read author
+    done
+
+    colorPrint "\n"
+
     # Copy template to target folder
     colorPrint "Copy resources\n"
 
