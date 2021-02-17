@@ -23,11 +23,11 @@ To create own template you need only to design project in Xcode
 
 ### Your template is ready!
 
-Note: ATProjectGenerator can refresh comments with author automaticaly: every standart comment lines with developer name like 
+<em>Note: ATProjectGenerator can refresh comments with author automatically: every standard comment lines with developer name like<em/>
 ``` Swift
 //  Created by Anton Tekutov on 17.02.21.
 ```
-will be replaced by name you just entered and current date
+<em>will be replaced by name you just entered and current date<em/>
 
 ---
 ## ATProjectGenerator usage
