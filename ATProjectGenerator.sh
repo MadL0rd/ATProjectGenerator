@@ -49,7 +49,7 @@ then
         do
             for dir in $(find $targetFolder -mindepth $depth -maxdepth $depth)
             do
-                newDirName="$(echo "${dir//Uapp/$projectName}")"
+                newDirName="$(echo "${dir//ApplicationName/$projectName}")"
                 if [ "$dir" != "$newDirName" ] && [[ "$dir" != Files/Pods* ]]
                 then
                     mv "$dir" "$newDirName"
@@ -60,10 +60,10 @@ then
         # Replacing all occurrences of one string with another in all files in the project directory
         colorPrint "Files content configuration\n"
 
-        replaceInFiles "Uapp" "$projectName" "$targetFolder"
+        replaceInFiles "ApplicationName" "$projectName" "$targetFolder"
 
         projectNameLower="$(echo "$projectName" | tr '[:upper:]' '[:lower:]')"
-        replaceInFiles "uapp" "$projectNameLower" "$targetFolder"
+        replaceInFiles "ApplicationName" "$projectNameLower" "$targetFolder"
 
         replaceInFiles "<#author#>" "$author" "$targetFolder"
 
