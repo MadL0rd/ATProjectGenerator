@@ -1,12 +1,12 @@
-# Uapp
+# ApplicationName
 =============
 
-Uapp iOS client.
+ApplicationName iOS client.
 
 ## Installation
 
-- Download Uapp zip or clone
-- Installing Uapp dependencies via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation. For best results, it is recommended that you install via CocoaPods **>= 0.19.1** using Git **>= 1.8.0** installed via Homebrew.
+- Download ApplicationName zip or clone
+- Installing ApplicationName dependencies via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation. For best results, it is recommended that you install via CocoaPods **>= 0.19.1** using Git **>= 1.8.0** installed via Homebrew.
 
 ### via CocoaPods
 
@@ -20,23 +20,23 @@ $ pod setup
 Change to the directory of your Xcode project:
 
 ``` bash
-$ cd /path/to/UappProject
+$ cd /path/to/ApplicationNameProject
 ```
 
-Install Uapp dependencies:
+Install ApplicationName dependencies:
 
 ``` bash
 $ pod install
 ```
 
-Open Uapp project in Xcode from the Uapp.xcworkspace file (not the usual project file)
+Open ApplicationName project in Xcode from the ApplicationName.xcworkspace file (not the usual project file)
 
 ``` bash
-$ open Uapp.xcworkspace
+$ open ApplicationName.xcworkspace
 ```
 
 - Start coding).
 
 ## License
 
-Uapp is licensed under the terms of the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Please see the [LICENSE](LICENSE) file for full details.
+ApplicationName is licensed under the terms of the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Please see the [LICENSE](LICENSE) file for full details.
