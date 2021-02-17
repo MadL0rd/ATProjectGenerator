@@ -1,7 +1,8 @@
 # ATProjectGenerator
 
 
-ATProjectGenerator - simple way to create own project template
+### ATProjectGenerator - simple way to create own project template
+### Main advantage is possibility to run, test and modify your template quickly and simple
 
 ## Installation
 
