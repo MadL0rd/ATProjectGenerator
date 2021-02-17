@@ -1,5 +1,5 @@
 # ATProjectGenerator
-=============
+
 
 ATProjectGenerator - simple way to create own project template
 
@@ -12,14 +12,22 @@ ATProjectGenerator - simple way to create own project template
 $ [sudo] gem install cocoapods
 $ pod setup
 ```
+---
 ## Start
 
 To create own template you need only to design project in Xcode
 - Create new project and name it 'ApplicationName'
 - Configure whatever you want
 - Install pods
-Your template is ready!
 
+### Your template is ready!
+
+### Note: ATProjectGenerator can refresh comments with author automaticaly: every standart comment lines with developer name like 
+``` Swift
+//  Created by Anton Tekutov on 17.02.21.
+```
+### will be replaced by name you just entered and current date
+---
 ## ATProjectGenerator usage
 
 Firs way is to enter all data as one common command like
@@ -38,9 +46,7 @@ Then you will see finder window with open project directory and message
 ``` bash
 	🎉	Project was successfully generated!	🎉
 ```
-
-P.S. in current version ATProjectGenerator can not refresh comments with author automaticaly, but it will be able soon...
-
+---
 ## License
 
 TagsList is available under the MIT license. See the LICENSE file for more info.

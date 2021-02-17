@@ -19,13 +19,13 @@ replaceInFiles() {
     do
         if [ -f "$file" ] && [[ "$file" != Files/Pods* ]]
         then
-            sed -i '' "s/$textToFind/$textToPut/g" "$file"
+            sed -i '' "s+$textToFind+$textToPut+g" "$file"
         fi
     done
 }
 
 templateFolder="$1"
-targetFolder="$2"
+startTargetFolder="$2"
 projectName="$3"
 author="$4"
 
@@ -40,10 +40,10 @@ done
 if [ -d "$templateFolder" ]
 then
 
-    while [ -z "$targetFolder" ]
+    while [ -z "$startTargetFolder" ]
     do
         colorPrint "Enter path to target folder: "
-        read targetFolder
+        read startTargetFolder
     done
 
     while [ -z "$projectName" ]
@@ -63,7 +63,7 @@ then
     # Copy template to target folder
     colorPrint "Copy resources\n"
 
-    targetFolder="$targetFolder/$projectName"
+    targetFolder="$startTargetFolder/$projectName"
     cp -a "$templateFolder" "$targetFolder"
     if [ $? -ne 0 ]
     then
@@ -93,10 +93,8 @@ then
         projectNameLower="$(echo "$projectName" | tr '[:upper:]' '[:lower:]')"
         replaceInFiles "ApplicationName" "$projectNameLower" "$targetFolder"
 
-        replaceInFiles "<#author#>" "$author" "$targetFolder"
-
         date=$(date '+%d.%m.%y')
-        replaceInFiles "<#date#>" "$date" "$targetFolder"
+        replaceInFiles ".*Created by.*" "//  Created by $author on $date." "$targetFolder"
 
         # Install pods
         colorPrint "Pods installation\n"
@@ -108,8 +106,8 @@ then
             pod install
         done
 
-
         colorPrint "\n\t🎉\tProject was successfully generated!\t🎉\n"
+        open $startTargetFolder
     fi
 else
     errorColorPrint "Could not find project template by dir $templateFolder"
