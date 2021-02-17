@@ -34,6 +34,8 @@ Enter path to target folder: /path/you/would/like/project/to/put
 Enter project name: ProjectName 
 Enter the author name: 'Author Name'
 ```
+Then you will see finder window with open project directory and message
+	🎉	Project was successfully generated!	🎉
 
 P.S. in current version ATProjectGenerator can not refresh comments with author automaticaly, but it will be able soon...
 
