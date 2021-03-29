@@ -2,7 +2,7 @@
 //  LoadingViewModelProtocol.swift
 //  ApplicationName
 //
-//  Created by <#author#> on <#date#>.
+//  Created by Антон Текутов on 29.03.2021.
 //
 
 protocol LoadingViewModelProtocol: class {

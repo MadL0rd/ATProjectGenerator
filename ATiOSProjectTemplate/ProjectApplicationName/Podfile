@@ -7,6 +7,9 @@ target 'ApplicationName' do
   
   pod 'SwiftLint'
   pod 'R.swift'
+  pod 'JGProgressHUD'
+  pod 'SDWebImage'
+  pod 'Alamofire'
 
 #  Exclude DEPLOYMENT_TARGET warnings
   post_install do |installer|

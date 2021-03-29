@@ -1,8 +1,8 @@
 //
 //  String+SizeCalculator.swift
-//  ApplicationName
+//  ClubhouseAvatarMaker
 //
-//  Created by <#author#> on <#date#>.
+//  Created by Anton Tekutov on 17.02.21.
 //
 
 import Foundation

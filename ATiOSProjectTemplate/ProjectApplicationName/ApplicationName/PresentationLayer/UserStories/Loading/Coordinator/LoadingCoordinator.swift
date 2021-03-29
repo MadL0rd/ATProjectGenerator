@@ -2,15 +2,13 @@
 //  LoadingCoordinator.swift
 //  ApplicationName
 //
-//  Created by <#author#> on <#date#>.
+//  Created by Антон Текутов on 29.03.2021.
 //
 
 import UIKit
 
-final class LoadingCoordinator {
+final class LoadingCoordinator: DefaultCoordinator {
     
-    weak var transition: ModuleTransitionHandler!
-
     static func createModule(_ configuration: ((CustomizableLoadingViewModel) -> Void)? = nil) -> UIViewController {
         let view = LoadingViewController()
         let viewModel = LoadingViewModel()
@@ -20,7 +18,7 @@ final class LoadingCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
-        
+
         if let configuration = configuration {
             configuration(viewModel)
         }
@@ -30,7 +28,6 @@ final class LoadingCoordinator {
 }
 
 // MARK: - Interface for view
-
 extension LoadingCoordinator: LoadingCoordinatorProtocol {
-    
+
 }

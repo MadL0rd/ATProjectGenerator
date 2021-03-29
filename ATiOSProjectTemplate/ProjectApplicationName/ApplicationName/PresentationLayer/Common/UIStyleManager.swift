@@ -23,6 +23,13 @@ class UIStyleManager {
         ])
     }
     
+    static func shadow(_ view: UIView) {
+        view.layer.shadowColor = R.color.gray()?.cgColor
+        view.layer.shadowRadius = 4
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = CGSize(width: 0, height: 4)
+    }
+    
     // MARK: - UINavigationController
     
     static func navigationControllerTransparent(_ controller: UINavigationController) {
