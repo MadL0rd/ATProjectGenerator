@@ -20,7 +20,7 @@ class AnnouncementViewController: UIViewController {
         label.font = R.font.gilroyBold(size: 24)
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.text = NSLocalizedString("Будет добавлено в следующих версиях", comment: "") 
+        label.text = R.string.localizable.announcementText()
         
         NSLayoutConstraint.activate([
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),

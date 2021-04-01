@@ -91,7 +91,7 @@ then
         replaceInFiles "ApplicationName" "$projectName" "$targetFolder"
 
         projectNameLower="$(echo "$projectName" | tr '[:upper:]' '[:lower:]')"
-        replaceInFiles "ApplicationName" "$projectNameLower" "$targetFolder"
+        replaceInFiles "applicationname" "$projectNameLower" "$targetFolder"
 
         date=$(date '+%d.%m.%y')
         replaceInFiles ".*Created by.*" "//  Created by $author on $date." "$targetFolder"

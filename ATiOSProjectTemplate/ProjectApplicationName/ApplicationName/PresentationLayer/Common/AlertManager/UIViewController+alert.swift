@@ -15,7 +15,7 @@ enum AlertType {
 extension UIViewController {
     
     func showErrorAlert(with message: String?, errorHandler: (() -> Void)? = nil) {
-        let alert = createAlert(title: NSLocalizedString("Error!", comment: ""),
+        let alert = createAlert(title: R.string.localizable.error(),
                                 message: message,
                                 type: .error,
                                 style: .alert,
@@ -33,13 +33,13 @@ extension UIViewController {
                                       message: message,
                                       preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""),
+        let okAction = UIAlertAction(title: R.string.localizable.ok(),
                                      style: .default,
                                      handler: { (_) in
                                         okHandler?()
                                      })
         
-        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""),
+        let cancelAction = UIAlertAction(title: R.string.localizable.cancel(),
                                          style: .cancel,
                                          handler: { (_) in
                                             cancelHandler?()
@@ -55,10 +55,10 @@ extension UIViewController {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""),
+        alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
                                       style: .cancel,
                                       handler: { (_) in resultHandler(false) }))
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Continue", comment: ""),
+        alert.addAction(UIAlertAction(title: R.string.localizable.continue(),
                                       style: UIAlertAction.Style.default,
                                       handler: { (_) in resultHandler(true) }))
         present(alert, animated: true, completion: nil)
@@ -72,7 +72,7 @@ extension UIViewController {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
-        let action = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel, handler: { (_) in
+        let action = UIAlertAction(title: R.string.localizable.ok(), style: .cancel, handler: { (_) in
             handler?()
         })
         
@@ -94,13 +94,42 @@ extension UIViewController {
         vc.view.addSubview(pickerView)
         alert.setValue(vc, forKey: "contentViewController")
         
-        alert.addAction(UIAlertAction(title: NSLocalizedString(NSLocalizedString("Cancel", comment: ""), comment: ""),
+        alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
                                       style: .cancel,
                                       handler: nil))
-        alert.addAction(UIAlertAction(title: NSLocalizedString(NSLocalizedString("Select", comment: ""), comment: ""),
+        alert.addAction(UIAlertAction(title: R.string.localizable.select(),
                                       style: UIAlertAction.Style.default,
                                       handler: { (_) in stringReturnHandler(pickerManager.selectedValue) }))
         present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func showAlertWithDatePicker(title: String, startDate: Date? = nil, datePickerMode: UIDatePicker.Mode = .date, returnHandler: @escaping (_ date: Date) -> Void) {
+        
+        let myDatePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: 250, height: 150))
+        myDatePicker.datePickerMode = datePickerMode
+        myDatePicker.timeZone = .current
+        myDatePicker.transform = .init(scaleX: 0.8, y: 0.8)
+        if let startDate = startDate {
+            myDatePicker.date = startDate
+        }
+        if #available(iOS 13.4, *) {
+            myDatePicker.preferredDatePickerStyle = .wheels
+        }
+        
+        let vc = UIViewController()
+        vc.preferredContentSize = CGSize(width: 250, height: 170)
+        vc.view.addSubview(myDatePicker)
+        
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alertController.setValue(vc, forKey: "contentViewController")
+        let selectAction = UIAlertAction(title: R.string.localizable.ok(), style: .default) { _ in
+            returnHandler(myDatePicker.date)
+        }
+        let cancelAction = UIAlertAction(title: R.string.localizable.cancel(), style: .cancel, handler: nil)
+        alertController.addAction(selectAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
     }
     
     func showAlertWithColorPicker(startColor: UIColor?, colorReturnHandler: @escaping (_ color: UIColor) -> Void) {
@@ -114,7 +143,7 @@ extension UIViewController {
             present(picker, animated: true, completion: nil)
             
         } else {
-            let alert = UIAlertController(title: NSLocalizedString("Choose color", comment: ""),
+            let alert = UIAlertController(title: R.string.localizable.chooseColor(),
                                           message: "",
                                           preferredStyle: UIAlertController.Style.alert)
             let colorPicker = ColorPickerView(frame: CGRect(x: 0, y: 0, width: 250, height: 265))
@@ -127,10 +156,10 @@ extension UIViewController {
             vc.view.addSubview(colorPicker)
             alert.setValue(vc, forKey: "contentViewController")
             
-            alert.addAction(UIAlertAction(title: NSLocalizedString(NSLocalizedString("Cancel", comment: ""), comment: ""),
+            alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
                                           style: .cancel,
                                           handler: nil))
-            alert.addAction(UIAlertAction(title: NSLocalizedString(NSLocalizedString("Select", comment: ""), comment: ""),
+            alert.addAction(UIAlertAction(title: R.string.localizable.select(),
                                           style: UIAlertAction.Style.default,
                                           handler: { (_) in colorReturnHandler(colorPicker.color) }))
             present(alert, animated: true, completion: nil)

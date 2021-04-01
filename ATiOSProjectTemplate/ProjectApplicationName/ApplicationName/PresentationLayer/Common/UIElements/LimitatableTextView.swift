@@ -73,10 +73,10 @@ class LimitatableTextView: UIControl {
         guard let maxLength = maxLength
         else { return }
         let count = maxLength - count
-        var text = "\(NSLocalizedString("осталось", comment: "")) \(count) "
-        let one = NSLocalizedString("символ", comment: "")
-        let less5 = NSLocalizedString("символа", comment: "")
-        let other = NSLocalizedString("символов", comment: "")
+        var text = "\(R.string.localizable.limit()) \(count) "
+        let one = R.string.localizable.character()
+        let less5 = R.string.localizable.characterLess5()
+        let other = R.string.localizable.characters()
         switch count % 10 {
         case 1:
             text += count % 100 != 11 ? one : other
