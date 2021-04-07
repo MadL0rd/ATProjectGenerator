@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5971D5A0C26A1DA07F69DC45 /* Pods_ApplicationNameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181AE00A56527B15EEF77B8C /* Pods_ApplicationNameTests.framework */; };
+		892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F99261D2EA200329B0A /* SKProduct+localizedPrice.swift */; };
+		892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F9A261D2EA200329B0A /* UserDefaults+color.swift */; };
+		892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F9B261D2EA200329B0A /* Array+weakObjects.swift */; };
+		892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F9C261D2EA200329B0A /* Bundle+info.swift */; };
+		892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */; };
+		892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */; };
+		892B1FAE261D2F1B00329B0A /* CACornerMask+typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1FAD261D2F1B00329B0A /* CACornerMask+typealias.swift */; };
 		8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940644926122B7600DC682F /* CustomPatchEncoding.swift */; };
 		8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940644A26122B7600DC682F /* CustomArrayEncoding.swift */; };
 		8940645326122B7600DC682F /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940644B26122B7600DC682F /* DataParser.swift */; };
@@ -94,6 +101,13 @@
 		6438099CA5B29E430834CBCF /* Pods-ApplicationNameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationNameTests.release.xcconfig"; path = "Target Support Files/Pods-ApplicationNameTests/Pods-ApplicationNameTests.release.xcconfig"; sourceTree = "<group>"; };
 		656934B3B2239FDB899B1AE8 /* ApplicationName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678DC1594F1721FA4DC5EFE5 /* Pods-ApplicationName.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationName.release.xcconfig"; path = "Target Support Files/Pods-ApplicationName/Pods-ApplicationName.release.xcconfig"; sourceTree = "<group>"; };
+		892B1F99261D2EA200329B0A /* SKProduct+localizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+localizedPrice.swift"; sourceTree = "<group>"; };
+		892B1F9A261D2EA200329B0A /* UserDefaults+color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+color.swift"; sourceTree = "<group>"; };
+		892B1F9B261D2EA200329B0A /* Array+weakObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+weakObjects.swift"; sourceTree = "<group>"; };
+		892B1F9C261D2EA200329B0A /* Bundle+info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+info.swift"; sourceTree = "<group>"; };
+		892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+safeIndex.swift"; sourceTree = "<group>"; };
+		892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+capitalizingFirstLetter.swift"; sourceTree = "<group>"; };
+		892B1FAD261D2F1B00329B0A /* CACornerMask+typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CACornerMask+typealias.swift"; sourceTree = "<group>"; };
 		8940644926122B7600DC682F /* CustomPatchEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPatchEncoding.swift; sourceTree = "<group>"; };
 		8940644A26122B7600DC682F /* CustomArrayEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomArrayEncoding.swift; sourceTree = "<group>"; };
 		8940644B26122B7600DC682F /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
@@ -235,6 +249,7 @@
 				89F00A542542E16200D482F6 /* ModelsLayer */,
 				89F00A582542E16200D482F6 /* PresentationLayer */,
 				89F00A302542E16200D482F6 /* Constants */,
+				892B1F98261D2EA200329B0A /* Extensions */,
 				83F30FBA998ECC429BAFB13D /* Resources */,
 				AA79B48E92F24FB535E09EA5 /* SupportingFiles */,
 			);
@@ -252,6 +267,19 @@
 				894065D526131BEE00DC682F /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		892B1F98261D2EA200329B0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				892B1F99261D2EA200329B0A /* SKProduct+localizedPrice.swift */,
+				892B1F9A261D2EA200329B0A /* UserDefaults+color.swift */,
+				892B1F9B261D2EA200329B0A /* Array+weakObjects.swift */,
+				892B1F9C261D2EA200329B0A /* Bundle+info.swift */,
+				892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */,
+				892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8940644626122B7600DC682F /* CoreLayer */ = {
@@ -326,6 +354,7 @@
 		894064B72612308800DC682F /* UIExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				892B1FAD261D2F1B00329B0A /* CACornerMask+typealias.swift */,
 				894064B82612308800DC682F /* UIView+TapAnimation.swift */,
 				894064B92612308800DC682F /* UIView+layerAnimation.swift */,
 				894064BA2612308800DC682F /* UIView+RoundedCorners.swift */,
@@ -783,6 +812,7 @@
 				894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */,
 				89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */,
 				89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */,
+				892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */,
 				89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */,
 				894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
@@ -790,6 +820,7 @@
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
+				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
@@ -799,6 +830,7 @@
 				8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */,
 				894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */,
 				894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */,
+				892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
@@ -817,6 +849,7 @@
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
+				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
 				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
 				894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */,
 				894064DE2612308800DC682F /* UIViewController+Keyboard.swift in Sources */,
@@ -824,9 +857,12 @@
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
 				8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
+				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
+				892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */,
 				894064EA2612308800DC682F /* ModuleTransitionHandler.swift in Sources */,
 				8940645726122B7600DC682F /* CompletionTypealiasesDefault.swift in Sources */,
+				892B1FAE261D2F1B00329B0A /* CACornerMask+typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

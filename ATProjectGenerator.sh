@@ -93,6 +93,14 @@ then
         projectNameLower="$(echo "$projectName" | tr '[:upper:]' '[:lower:]')"
         replaceInFiles "applicationname" "$projectNameLower" "$targetFolder"
 
+        # Remove Pods folder to avoid comments replacing in pods
+        rm -r "$targetFolder/Pods"
+        for dir in $(find $targetFolder -maxdepth 50 -name 'Pods')
+        do
+            rm -rf "$dir"
+        done
+
+        # Replce all author comments 
         date=$(date '+%d.%m.%y')
         replaceInFiles ".*Created by.*" "//  Created by $author on $date." "$targetFolder"
 
@@ -107,7 +115,7 @@ then
         done
 
         colorPrint "\n\t🎉\tProject was successfully generated!\t🎉\n"
-        open $startTargetFolder
+        open $targetFolder
     fi
 else
     errorColorPrint "Could not find project template by dir $templateFolder"
