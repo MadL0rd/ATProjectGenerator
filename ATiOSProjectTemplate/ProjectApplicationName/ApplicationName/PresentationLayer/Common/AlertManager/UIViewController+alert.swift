@@ -187,6 +187,3 @@ fileprivate class ColorPickerDefaultDelegate: NSObject, UIColorPickerViewControl
         color = viewController.selectedColor
     }
 }
-
-//        TODO: marks for localized strings
-

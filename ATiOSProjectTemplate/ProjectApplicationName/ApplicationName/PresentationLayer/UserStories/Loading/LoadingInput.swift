@@ -5,7 +5,7 @@
 //  Created by Антон Текутов on 29.03.2021.
 //
 
-protocol CustomizableLoadingViewModel: class {
+protocol CustomizableLoadingViewModel: AnyObject {
     
     var output: LoadingOutput? { get set }
 }
