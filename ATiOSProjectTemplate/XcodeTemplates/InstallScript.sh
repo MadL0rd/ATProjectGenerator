@@ -13,7 +13,7 @@ remove() {
   rm -r "$HOME/Library/Developer/Xcode/Templates/MVVM+Coordinator"
 }
 
-DIR="$HOME/Library/Developer/Xcode/Templates/MVVM+Coordinator"
+DIR="$HOME/Library/Developer/Xcode/Templates/ViewModulesPatterns"
 if [ -d "$DIR" ]
 then
   colorPrint "\n\tTemplate with the same name is already installed!\n\t\tDo you wish to replace it?\n"
