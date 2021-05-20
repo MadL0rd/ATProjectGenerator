@@ -67,6 +67,9 @@
 		894065EB261328E100DC682F /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E7261328E100DC682F /* Gilroy-Semibold.ttf */; };
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
+		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
+		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
+		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
@@ -161,6 +164,9 @@
 		894065E7261328E100DC682F /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
+		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
+		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -172,7 +178,7 @@
 		89F00A532542E16200D482F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA50F899D423B5FD91BAA4EB /* Pods-ApplicationNameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationNameTests.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationNameTests/Pods-ApplicationNameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C478B2B98E37F18BAC093DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EEE75E08BB0BFE44AD9046BF /* ApplicationNameTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ApplicationNameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE75E08BB0BFE44AD9046BF /* ApplicationNameTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; name = ApplicationNameTests.xctest; path = ApplicationName.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A97D24E1314BC504A0C8C1 /* Pods-ApplicationName.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationName.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationName/Pods-ApplicationName.debug.xcconfig"; sourceTree = "<group>"; };
 		FC03FAC3E2653A0CFEC93FAC /* Pods_ApplicationName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplicationName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -375,6 +381,7 @@
 		894064C72612308800DC682F /* ModuleBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				8981FD7E2656EBE400993B65 /* AlertPresentationViewController */,
 				894064C82612308800DC682F /* ModuleTransitionHandler */,
 				894064CB2612308800DC682F /* DefaultCoordinator.swift */,
 			);
@@ -393,15 +400,16 @@
 		894064CC2612308800DC682F /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				894064D02612308800DC682F /* SegmentedControl */,
 				894064CD2612308800DC682F /* LimitatableTextView.swift */,
 				894064CE2612308800DC682F /* PaddingLabel.swift */,
 				894064CF2612308800DC682F /* AnnouncementViewController.swift */,
-				894064D02612308800DC682F /* SegmentedControl */,
 				894064D32612308800DC682F /* ScrollMovingUpManagerForUIControl.swift */,
 				894064D42612308800DC682F /* ArrowDownButton.swift */,
 				894064D52612308800DC682F /* ContentFittingTableView.swift */,
 				894064D62612308800DC682F /* TouchClearUIComponents.swift */,
 				894064D72612308800DC682F /* ButtonWithTouchSize.swift */,
+				899AAFDA2656AC460066CA10 /* VibroGenerator.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -471,6 +479,15 @@
 				894065E8261328E100DC682F /* Gilroy-Bold.ttf */,
 			);
 			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		8981FD7E2656EBE400993B65 /* AlertPresentationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */,
+				8981FD812656EC5600993B65 /* AlertPresentationView.swift */,
+			);
+			path = AlertPresentationViewController;
 			sourceTree = "<group>";
 		};
 		89F00A302542E16200D482F6 /* Constants */ = {
@@ -804,6 +821,7 @@
 			files = (
 				894064EF2612308800DC682F /* AnnouncementViewController.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
+				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
 				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
@@ -827,6 +845,8 @@
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
 				897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */,
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
+				8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */,
+				8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */,
 				8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */,
 				894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */,
 				894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */,
