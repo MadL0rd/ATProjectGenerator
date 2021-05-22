@@ -73,6 +73,8 @@
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
+		89E608662658897C00E6707C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E608642658897B00E6707C /* Contacts.swift */; };
+		89E608672658897C00E6707C /* LocalOnlyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E608652658897B00E6707C /* LocalOnlyConstants.swift */; };
 		89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A312542E16200D482F6 /* UIConstants.swift */; };
 		89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A4D2542E16200D482F6 /* AppRouter.swift */; };
 		89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A4E2542E16200D482F6 /* MainAppRouter.swift */; };
@@ -170,6 +172,8 @@
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		89E608642658897B00E6707C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		89E608652658897B00E6707C /* LocalOnlyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalOnlyConstants.swift; sourceTree = "<group>"; };
 		89F00A312542E16200D482F6 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		89F00A4D2542E16200D482F6 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		89F00A4E2542E16200D482F6 /* MainAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppRouter.swift; sourceTree = "<group>"; };
@@ -494,6 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				89F00A312542E16200D482F6 /* UIConstants.swift */,
+				89E608642658897B00E6707C /* Contacts.swift */,
+				89E608652658897B00E6707C /* LocalOnlyConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -853,6 +859,7 @@
 				892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
+				89E608662658897C00E6707C /* Contacts.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
@@ -869,6 +876,7 @@
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
+				89E608672658897C00E6707C /* LocalOnlyConstants.swift in Sources */,
 				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
 				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
 				894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */,
