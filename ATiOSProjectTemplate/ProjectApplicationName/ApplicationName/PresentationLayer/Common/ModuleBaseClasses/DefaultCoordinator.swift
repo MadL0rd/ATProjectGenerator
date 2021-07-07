@@ -17,18 +17,18 @@ enum ModuleOpeningMode {
 protocol DefaultCoordinatorProtocol: AnyObject {
     
     func dismiss()
-    func openModule(_ module: UserStoriesModulesDefault, openingMode: ModuleOpeningMode)
-    func openModuleWithOutput(_ module: UserStoriesModulesWithOutput, openingMode: ModuleOpeningMode)
+    func openModule(_ module: UserStoriesModulesDefault, openingMode: ModuleOpeningMode?)
+    func openModuleWithOutput(_ module: UserStoriesModulesWithOutput, openingMode: ModuleOpeningMode?)
 }
 
 extension DefaultCoordinatorProtocol {
     
     func openModule(_ module: UserStoriesModulesDefault) {
-        openModule(module, openingMode: .showInRootNavigationController)
+        openModule(module, openingMode: nil)
     }
     
     func openModuleWithOutput(_ module: UserStoriesModulesWithOutput) {
-        openModuleWithOutput(module, openingMode: .showInRootNavigationController)
+        openModuleWithOutput(module, openingMode: nil)
     }
 }
 
@@ -40,17 +40,23 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         transition.dismissSelf()
     }
     
-    func openModule(_ module: UserStoriesModulesDefault, openingMode: ModuleOpeningMode) {
+    func openModule(_ module: UserStoriesModulesDefault, openingMode: ModuleOpeningMode?) {
         openModule(moduleGenerator: module, openingMode: openingMode)
     }
     
-    func openModuleWithOutput(_ module: UserStoriesModulesWithOutput, openingMode: ModuleOpeningMode) {
+    func openModuleWithOutput(_ module: UserStoriesModulesWithOutput, openingMode: ModuleOpeningMode?) {
         openModule(moduleGenerator: module, openingMode: openingMode)
     }
     
-    private func openModule(moduleGenerator: ModuleGenerator, openingMode: ModuleOpeningMode) {
+    private func openModule(moduleGenerator: ModuleGenerator, openingMode: ModuleOpeningMode?) {
         let vc = moduleGenerator.createModule()
-        switch openingMode {
+        var openingModeResult = openingMode ?? .showInRootNavigationController
+        if let vc = vc as? UIViewControllerTransitioningDelegate & UIViewController,
+           (openingMode == nil || openingMode == .present) {
+            openingModeResult = .present
+            vc.view.backgroundColor = vc.view.backgroundColor
+        }
+        switch openingModeResult {
         case .present:
             // magic for custom presentation
             if let vc = vc as? UIViewControllerTransitioningDelegate & UIViewController {
@@ -64,4 +70,3 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         }
     }
 }
-

@@ -66,6 +66,7 @@
 		894065EA261328E100DC682F /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E6261328E100DC682F /* Gilroy-Light.ttf */; };
 		894065EB261328E100DC682F /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E7261328E100DC682F /* Gilroy-Semibold.ttf */; };
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
+		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
@@ -165,6 +166,7 @@
 		894065E6261328E100DC682F /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
 		894065E7261328E100DC682F /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				892B1F9C261D2EA200329B0A /* Bundle+info.swift */,
 				892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */,
 				892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */,
+				8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -846,6 +849,7 @@
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
 				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
+				8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,

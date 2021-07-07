@@ -22,6 +22,6 @@ extension CACornerMask {
     }
     
     public static var bottomRight: CACornerMask {
-        return layerMaxXMinYCorner
+        return layerMaxXMaxYCorner
     }
 }
