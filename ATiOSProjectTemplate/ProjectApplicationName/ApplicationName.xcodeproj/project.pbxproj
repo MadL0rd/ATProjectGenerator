@@ -68,6 +68,7 @@
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
 		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
 		89709976269569BC0082F99D /* UI+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709975269569BC0082F99D /* UI+resources.swift */; };
+		897099F0269583AC0082F99D /* String+isEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099EF269583AC0082F99D /* String+isEmail.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
@@ -169,6 +170,7 @@
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
 		89709975269569BC0082F99D /* UI+resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+resources.swift"; sourceTree = "<group>"; };
+		897099EF269583AC0082F99D /* String+isEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isEmail.swift"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */,
 				892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */,
 				8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */,
+				897099EF269583AC0082F99D /* String+isEmail.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
+				897099F0269583AC0082F99D /* String+isEmail.swift in Sources */,
 				894064DD2612308800DC682F /* UIView+RoundedCorners.swift in Sources */,
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
