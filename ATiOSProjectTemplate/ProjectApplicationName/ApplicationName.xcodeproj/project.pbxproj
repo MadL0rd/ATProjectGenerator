@@ -67,6 +67,7 @@
 		894065EB261328E100DC682F /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E7261328E100DC682F /* Gilroy-Semibold.ttf */; };
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
 		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
+		89709976269569BC0082F99D /* UI+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709975269569BC0082F99D /* UI+resources.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
@@ -167,6 +168,7 @@
 		894065E7261328E100DC682F /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
+		89709975269569BC0082F99D /* UI+resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+resources.swift"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		894064B72612308800DC682F /* UIExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				89709975269569BC0082F99D /* UI+resources.swift */,
 				892B1FAD261D2F1B00329B0A /* CACornerMask+typealias.swift */,
 				894064B82612308800DC682F /* UIView+TapAnimation.swift */,
 				894064B92612308800DC682F /* UIView+layerAnimation.swift */,
@@ -841,6 +844,7 @@
 				89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */,
 				892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */,
 				89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */,
+				89709976269569BC0082F99D /* UI+resources.swift in Sources */,
 				894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
