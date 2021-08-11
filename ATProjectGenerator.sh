@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Functions
+
 colorPrint() {
   text=$1
   printf "%b" "\e[1;34m${text}\e[0m"
@@ -23,6 +25,8 @@ replaceInFiles() {
         fi
     done
 }
+
+# Code segment
 
 templateFolder="$1"
 startTargetFolder="$2"

@@ -51,4 +51,4 @@ Then you will see finder window with open project directory and message
 ---
 ## License
 
-ATProjectGenerator is available under the MIT license. See the LICENSE file for more info.
+ATProjectGenerator is licensed under the terms of the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Please see the [LICENSE](LICENSE) file for full details.
