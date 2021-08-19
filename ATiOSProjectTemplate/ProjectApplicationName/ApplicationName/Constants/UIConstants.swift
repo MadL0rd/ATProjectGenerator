@@ -34,4 +34,8 @@ struct UIConstants {
     static let heightDesignCoefficient: CGFloat = {
         UIConstants.screenBounds.height / 812
     }()
+    
+    static let customTabBarHeight: CGFloat = {
+        return 64 + (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
+    }()
 }

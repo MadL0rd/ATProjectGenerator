@@ -26,3 +26,16 @@
 // Other
 "announcementText" = "Will be added in the next version";
 
+// Settings
+"settingsTitle" = "Settings";
+"settingsSupport" = "Support";
+"settingsRateApp" = "Rate the app";
+"settingsAboutUs" = "About us";
+"settingsUserAgreement" = "User Agreement";
+"settingsPrivacyPolicy" = "Privacy Policy";
+"settingsVersion" = "Version";
+"settingsNotAffiliated" = "This app is not affiliated with Random Inc.";
+
+// About us
+"aboutUsTitle" = "About us";
+"aboutUsText" = "Hi everyone!\nIf you have any questions contact me using shis email";

@@ -131,7 +131,7 @@ class SegmentedControl: UIControl {
     // MARK: - Setup methods
     
     private func setupView() {
-        backgroundColor = R.color.backgroundLight()
+        backgroundColor = .res.backgroundLight()
         isUserInteractionEnabled = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(recognizer:)))
@@ -155,7 +155,7 @@ class SegmentedControl: UIControl {
     private func setupSelectionView() {
         addSubview(selectionView)
         selectionView.translatesAutoresizingMaskIntoConstraints = false
-        selectionView.backgroundColor = R.color.main()
+        selectionView.backgroundColor = .res.main()
         selectionView.isHidden = true
     }
     

@@ -41,12 +41,13 @@ final class LoadingView: UIView {
     
     private func setupView() {
 
-        backgroundColor = R.color.main()
+        backgroundColor = .res.backgroundLight()
         
         addSubview(logo)
         logo.translatesAutoresizingMaskIntoConstraints = false
         logo.contentMode = .scaleAspectFit
-        logo.image = R.image.launchLogo()
+        logo.image = .res.launchLogo()
+        logo.tintColor = .res.main()
         
         makeConstraints()
     }

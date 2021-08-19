@@ -9,7 +9,7 @@ import UIKit
 
 class ArrowDownButton: UIButton {
     
-    let arrow = UIImageView(image: R.image.arrowDown())
+    let arrow = UIImageView(image: .res.arrowDown())
     let label = UILabel()
     
     var text: String? {
@@ -39,14 +39,14 @@ class ArrowDownButton: UIButton {
         
         addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = R.font.gilroyBold(size: 14)
-        label.textColor = R.color.tintColorDark()
+        label.font = .res.gilroyBold(size: 14)
+        label.textColor = .res.tintDark()
         label.numberOfLines = 0
         
         addSubview(arrow)
         arrow.translatesAutoresizingMaskIntoConstraints = false
         arrow.contentMode = .scaleAspectFit
-        arrow.tintColor = R.color.tintColorDark()
+        arrow.tintColor = .res.tintDark()
         
         makeConstraints()
     }

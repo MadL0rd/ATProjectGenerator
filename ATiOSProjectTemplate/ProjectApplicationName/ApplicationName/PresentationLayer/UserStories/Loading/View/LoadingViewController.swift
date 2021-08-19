@@ -30,8 +30,8 @@ final class LoadingViewController: UIViewController {
         viewModel.startConfiguration()
         
         _view.hideLogo()
-        DispatchQueue.main.asyncAfter(deadline: .now() + _view.hideLogoDuration) {
-            print("logo hide completion")
+        DispatchQueue.main.asyncAfter(deadline: .now() + _view.hideLogoDuration) { [ weak self ] in
+            self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
         }
     }
 }

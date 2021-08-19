@@ -12,15 +12,16 @@ class AnnouncementViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = R.color.backgroundLight()
+        view.backgroundColor = .res.backgroundLight()
         
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
-        label.font = R.font.gilroyBold(size: 24)
+        label.font = .res.gilroyBold(size: 24)
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.text = R.string.localizable.announcementText()
+        label.text = .res.announcementText()
+        label.textColor = .res.main()
         
         NSLayoutConstraint.activate([
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),

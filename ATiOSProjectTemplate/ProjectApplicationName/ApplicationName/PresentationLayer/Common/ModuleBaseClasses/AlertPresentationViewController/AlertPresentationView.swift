@@ -14,7 +14,7 @@ class AlertPresentationView: UIView {
     
     var duration: TimeInterval = 0.3
     
-    var transitionYContentMovingDelta: CGFloat = UIConstants.screenBounds.width * 0.6
+    var transitionYContentMovingDelta: CGFloat = .res.screenBounds.width * 0.6
 
     override init(frame: CGRect) {
         super.init(frame: frame)

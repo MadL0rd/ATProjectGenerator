@@ -15,7 +15,7 @@ enum AlertType {
 extension UIViewController {
     
     func showErrorAlert(with message: String?, errorHandler: (() -> Void)? = nil) {
-        let alert = createAlert(title: R.string.localizable.error(),
+        let alert = createAlert(title: .res.error(),
                                 message: message,
                                 type: .error,
                                 style: .alert,
@@ -33,13 +33,13 @@ extension UIViewController {
                                       message: message,
                                       preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: R.string.localizable.ok(),
+        let okAction = UIAlertAction(title: .res.ok(),
                                      style: .default,
                                      handler: { (_) in
                                         okHandler?()
                                      })
         
-        let cancelAction = UIAlertAction(title: R.string.localizable.cancel(),
+        let cancelAction = UIAlertAction(title: .res.cancel(),
                                          style: .cancel,
                                          handler: { (_) in
                                             cancelHandler?()
@@ -55,10 +55,10 @@ extension UIViewController {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
+        alert.addAction(UIAlertAction(title: .res.cancel(),
                                       style: .cancel,
                                       handler: { (_) in resultHandler(false) }))
-        alert.addAction(UIAlertAction(title: R.string.localizable.continue(),
+        alert.addAction(UIAlertAction(title: .res.continue(),
                                       style: UIAlertAction.Style.default,
                                       handler: { (_) in resultHandler(true) }))
         present(alert, animated: true, completion: nil)
@@ -72,7 +72,7 @@ extension UIViewController {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
-        let action = UIAlertAction(title: R.string.localizable.ok(), style: .cancel, handler: { (_) in
+        let action = UIAlertAction(title: .res.ok(), style: .cancel, handler: { (_) in
             handler?()
         })
         
@@ -94,10 +94,10 @@ extension UIViewController {
         vc.view.addSubview(pickerView)
         alert.setValue(vc, forKey: "contentViewController")
         
-        alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
+        alert.addAction(UIAlertAction(title: .res.cancel(),
                                       style: .cancel,
                                       handler: nil))
-        alert.addAction(UIAlertAction(title: R.string.localizable.select(),
+        alert.addAction(UIAlertAction(title: .res.select(),
                                       style: UIAlertAction.Style.default,
                                       handler: { (_) in stringReturnHandler(pickerManager.selectedValue) }))
         present(alert, animated: true, completion: nil)
@@ -123,10 +123,10 @@ extension UIViewController {
         
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alertController.setValue(vc, forKey: "contentViewController")
-        let selectAction = UIAlertAction(title: R.string.localizable.ok(), style: .default) { _ in
+        let selectAction = UIAlertAction(title: .res.ok(), style: .default) { _ in
             returnHandler(myDatePicker.date)
         }
-        let cancelAction = UIAlertAction(title: R.string.localizable.cancel(), style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: .res.cancel(), style: .cancel, handler: nil)
         alertController.addAction(selectAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true)
@@ -143,7 +143,7 @@ extension UIViewController {
             present(picker, animated: true, completion: nil)
             
         } else {
-            let alert = UIAlertController(title: R.string.localizable.chooseColor(),
+            let alert = UIAlertController(title: .res.chooseColor(),
                                           message: "",
                                           preferredStyle: UIAlertController.Style.alert)
             let colorPicker = ColorPickerView(frame: CGRect(x: 0, y: 0, width: 250, height: 265))
@@ -156,10 +156,10 @@ extension UIViewController {
             vc.view.addSubview(colorPicker)
             alert.setValue(vc, forKey: "contentViewController")
             
-            alert.addAction(UIAlertAction(title: R.string.localizable.cancel(),
+            alert.addAction(UIAlertAction(title: .res.cancel(),
                                           style: .cancel,
                                           handler: nil))
-            alert.addAction(UIAlertAction(title: R.string.localizable.select(),
+            alert.addAction(UIAlertAction(title: .res.select(),
                                           style: UIAlertAction.Style.default,
                                           handler: { (_) in colorReturnHandler(colorPicker.color) }))
             present(alert, animated: true, completion: nil)

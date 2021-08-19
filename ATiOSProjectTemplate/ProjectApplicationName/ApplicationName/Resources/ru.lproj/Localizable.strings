@@ -25,3 +25,17 @@
 
 // Other
 "announcementText" = "Будет добавлено в следующих версиях";
+
+// Settings
+"settingsTitle" = "Настройки";
+"settingsSupport" = "Поддержка";
+"settingsRateApp" = "Оценить приложение";
+"settingsAboutUs" = "О нас";
+"settingsUserAgreement" = "Пользовательское соглашение";
+"settingsPrivacyPolicy" = "Политика конфиденциальности";
+"settingsVersion" = "Version";
+"settingsNotAffiliated" = "Это приложение не связано с Random Inc.";
+
+// About us
+"aboutUsTitle" = "О нас";
+"aboutUsText" = "Всем привет!\nЕсли у вас есть какие-либо вопросы, то связаться со мной можно написаы на этот почтовый ящик";

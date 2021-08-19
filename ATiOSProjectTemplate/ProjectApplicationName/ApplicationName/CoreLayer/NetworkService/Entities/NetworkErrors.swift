@@ -17,15 +17,15 @@ enum NetworkServiceError: Int, Error {
     var localizedDescription: String {
         switch self {
         case .cannotParceData:
-            return R.string.localizable.cannotParceData()
+            return .res.cannotParceData()
         case .unknown:
-            return R.string.localizable.unknownError()
+            return .res.unknownError()
         case .badToken:
-            return R.string.localizable.badToken()
+            return .res.badToken()
         case .badRoute:
-            return R.string.localizable.badRoute()
+            return .res.badRoute()
         case .badRequestDataFormat:
-            return R.string.localizable.badRequestDataFormat()
+            return .res.badRequestDataFormat()
         }
     }
 }

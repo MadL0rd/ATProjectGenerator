@@ -23,8 +23,8 @@ class LabelsSegmentedControl: SegmentedControl {
     
     func addTextSegment(_ text: String) {
         let label = UILabel()
-        label.font = R.font.gilroyBold(size: 12)
-        label.textColor = R.color.tintColorLight()
+        label.font = .res.gilroyBold(size: 12)
+        label.textColor = .res.tintLight()
         label.numberOfLines = 1
         label.textAlignment = .center
         label.text = text
@@ -71,6 +71,6 @@ class LabelsSegmentedControl: SegmentedControl {
     }
     
     private func selectedLabelConfiguration(_ label: UILabel) {
-        label.textColor = R.color.tintColorLight()
+        label.textColor = .res.tintLight()
     }
 }

@@ -15,7 +15,7 @@ protocol SizeUpdateDelegate: AnyObject {
 class LimitatableTextView: UIControl {
     
     private var textViewHeightConstraint: NSLayoutConstraint!
-    var textViewMaxHeight: CGFloat = UIConstants.screenBounds.height * 0.32
+    var textViewMaxHeight: CGFloat = .res.screenBounds.height * 0.32
     var textViewMinHeight: CGFloat = 70
     
     weak var sizeUpdateDelegate: SizeUpdateDelegate?
@@ -73,10 +73,10 @@ class LimitatableTextView: UIControl {
         guard let maxLength = maxLength
         else { return }
         let count = maxLength - count
-        var text = "\(R.string.localizable.limit()) \(count) "
-        let one = R.string.localizable.character()
-        let less5 = R.string.localizable.characterLess5()
-        let other = R.string.localizable.characters()
+        var text = "\(String.res.limit()) \(count) "
+        let one = String.res.character()
+        let less5 = String.res.characterLess5()
+        let other = String.res.characters()
         switch count % 10 {
         case 1:
             text += count % 100 != 11 ? one : other
@@ -110,22 +110,22 @@ class LimitatableTextView: UIControl {
         
         addSubview(textEditor)
         textEditor.translatesAutoresizingMaskIntoConstraints = false
-        textEditor.backgroundColor = R.color.lightGray()
+        textEditor.backgroundColor = .res.lightGray()
         textEditor.layer.cornerRadius = 16
         textEditor.delegate = self
         textEditor.textContainerInset = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
-        textEditor.font = R.font.gilroyRegular(size: 14)
+        textEditor.font = .res.gilroyRegular(size: 14)
         
         addSubview(countLabel)
         countLabel.translatesAutoresizingMaskIntoConstraints = false
-        countLabel.font = R.font.gilroyBold(size: 10)
-        countLabel.textColor = R.color.gray()
+        countLabel.font = .res.gilroyBold(size: 10)
+        countLabel.textColor = .res.gray()
         countLabel.alpha = 0.5
         
         addSubview(placeholder)
         placeholder.translatesAutoresizingMaskIntoConstraints = false
-        placeholder.textColor = R.color.tintColorDark()
-        placeholder.font = R.font.gilroyRegular(size: 14)
+        placeholder.textColor = .res.tintDark()
+        placeholder.font = .res.gilroyRegular(size: 14)
         
         placeholder.text = ""
         
