@@ -34,11 +34,11 @@ To create own template you need only to design project in Xcode
 
 Firs way is to enter all data as one common command like
 ``` bash
-$ sh ATProjectGenerator.sh ./ATiOSProjectTemplate/ /path/you/would/like/project/to/put ProjectName 'Author Name'
+sh ATProjectGenerator.sh ./ATiOSProjectTemplate/ /path/you/would/like/project/to/put ProjectName 'Author Name'
 ```
 Second way is to enter all of the paramms separately like
 ``` bash
-$ sh ATProjectGenerator.sh 
+sh ATProjectGenerator.sh 
 Enter path to template folder: ./ATiOSProjectTemplate/ 
 Enter path to target folder: /path/you/would/like/project/to/put 
 Enter project name: ProjectName 
