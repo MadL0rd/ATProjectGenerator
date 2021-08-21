@@ -108,6 +108,9 @@ then
         date=$(date '+%d.%m.%y')
         replaceInFiles ".*Created by.*" "//  Created by $author on $date." "$targetFolder"
 
+        # Replace date in other files
+        replaceInFiles "GenerationDate" "$date" "$targetFolder"
+
         # Install pods
         colorPrint "Pods installation\n"
 

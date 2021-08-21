@@ -55,6 +55,10 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         transition.present(vc)
     }
     
+    func generateAnnouncementModule() -> UIViewController {
+        return AnnouncementViewController()
+    }
+    
     func openModule(_ module: UserStoriesModulesDefault, openingMode: ModuleOpeningMode?) {
         openModule(moduleGenerator: module, openingMode: openingMode)
     }
@@ -83,9 +87,5 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         case .showInNewRootNavigationStack:
             transition.showInNewRootNavigationStack(controller: vc)
         }
-    }
-    
-    func generateAnnouncementModule() -> UIViewController {
-        return AnnouncementViewController()
     }
 }
