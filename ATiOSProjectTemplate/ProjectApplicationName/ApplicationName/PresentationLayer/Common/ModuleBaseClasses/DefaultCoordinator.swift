@@ -49,7 +49,6 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         else { return }
         
         let config = SFSafariViewController.Configuration()
-        config.entersReaderIfAvailable = true
         
         let vc = SFSafariViewController(url: url, configuration: config)
         transition.present(vc)
