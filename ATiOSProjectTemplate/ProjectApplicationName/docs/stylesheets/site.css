@@ -43,8 +43,7 @@ main {
     text-decoration: none; }
     main a:focus, main a:hover {
       border-bottom: 1px solid #723A78; }
-  main li a {
-    font-size: larger;
-    text-decoration: none; }
-    main li a:focus, main li a:hover {
-      border-bottom: 1px solid #000; }
+
+li.homapage_menu a {
+  font-size: larger;
+  text-decoration: none; }
