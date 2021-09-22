@@ -51,6 +51,9 @@ class DefaultCoordinator: DefaultCoordinatorProtocol {
         let config = SFSafariViewController.Configuration()
         
         let vc = SFSafariViewController(url: url, configuration: config)
+        vc.preferredBarTintColor = .res.backgroundLight()
+        vc.preferredControlTintColor = .res.main()
+        
         transition.present(vc)
     }
     
