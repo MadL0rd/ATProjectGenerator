@@ -40,14 +40,15 @@ class AlertPresentationView: UIView {
     func setTransitionViewState(fractionCompletionState: Float, animated: Bool, duration: TimeInterval? = nil) {
         let fraction = CGFloat(min(max(fractionCompletionState, -1), 1))
         let fractionAbs: CGFloat = abs(fraction)
-        
-        let scaleModifier = (1 - fractionAbs) * 0.05 + 0.95
+        let fractionAbsAlphaModifier: CGFloat = 1 - pow(fractionAbs, 3)
+
+        let scaleModifier = (1 - fractionAbs) * 0.1 + 0.9
         
         let transitionAction = { [ weak self ] in
             guard let self = self
             else { return }
-            self.backgroundView.alpha = CGFloat(1 - fractionAbs)
-            self.contentView.alpha = CGFloat(1 - fractionAbs)
+            self.backgroundView.alpha = fractionAbsAlphaModifier
+            self.contentView.alpha = fractionAbsAlphaModifier
             self.contentView.transform = .init(translationX: 0, y: self.transitionYContentMovingDelta * fraction)
                 .scaledBy(x: scaleModifier, y: scaleModifier)
         }

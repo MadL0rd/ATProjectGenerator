@@ -9,6 +9,18 @@ import UIKit
 
 extension CACornerMask {
     
+    public static var all: [CACornerMask] {
+        return [topLeft, topRight, bottomLeft, bottomRight]
+    }
+    
+    public static var top: [CACornerMask] {
+        return [topLeft, topRight, bottomLeft, bottomRight]
+    }
+    
+    public static var bottom: [CACornerMask] {
+        return [bottomLeft, bottomRight]
+    }
+    
     public static var topLeft: CACornerMask {
         return layerMinXMinYCorner
     }
