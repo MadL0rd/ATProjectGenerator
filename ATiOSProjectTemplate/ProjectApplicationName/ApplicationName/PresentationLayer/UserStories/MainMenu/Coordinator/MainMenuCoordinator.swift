@@ -1,6 +1,6 @@
 //
 //  MainMenuCoordinator.swift
-//  WhyNFT
+//  ApplicationName
 //
 //  Created by Антон Текутов on 12.06.2021.
 //
@@ -18,6 +18,8 @@ final class MainMenuCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        SharedDependenciesManager.injectDependencies(for: viewModel)
 
         if let configuration = configuration {
             configuration(viewModel)

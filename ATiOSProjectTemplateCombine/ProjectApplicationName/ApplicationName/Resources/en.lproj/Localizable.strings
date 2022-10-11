@@ -1,0 +1,42 @@
+
+// LimitatableTextView
+"limit" = "limit";
+"character" = "character";
+"characterLess5" = "characters";
+"characters" = "characters";
+
+// Network
+"networkError.cannotParceData" = "Cannot parce data";
+"networkError.unknown" = "Unknown error";
+"networkError.connectionProblems" = "Seems like there is a problem with your connection";
+"networkError.wrongCode" = "Wrong code";
+"networkError.wrongEmail" = "Wrong email";
+"networkError.unknownError" = "Unknown error";
+"networkError.badToken" = "Can not get access to your account";
+"networkError.badRoute" = "Route not found";
+"networkError.badRequestDataFormat" = "Internal server error or bad request data format";
+
+// Alerts
+"error" = "Error!";
+"ok" = "OK";
+"cancel" = "Cancel";
+"continue" = "Continue";
+"select" = "Select";
+"choose color" = "Choose color";
+
+// Other
+"announcementText" = "Will be added in the next version";
+
+// Settings
+"settingsTitle" = "Settings";
+"settingsSupport" = "Support";
+"settingsRateApp" = "Rate the app";
+"settingsAboutUs" = "About us";
+"settingsUserAgreement" = "User Agreement";
+"settingsPrivacyPolicy" = "Privacy Policy";
+"settingsVersion" = "Version";
+"settingsNotAffiliated" = "This app is not affiliated with Random Inc.";
+
+// About us
+"aboutUsTitle" = "About us";
+"aboutUsText" = "Hi everyone!\nIf you have any questions contact me using shis email";

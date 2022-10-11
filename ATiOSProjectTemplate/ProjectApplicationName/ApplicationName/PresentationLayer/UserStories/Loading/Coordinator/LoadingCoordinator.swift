@@ -18,6 +18,10 @@ final class LoadingCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        SharedDependenciesManager.injectDependencies(for: viewModel)
+        
+        SharedDependenciesManager.injectDependencies(for: viewModel)
 
         if let configuration = configuration {
             configuration(viewModel)

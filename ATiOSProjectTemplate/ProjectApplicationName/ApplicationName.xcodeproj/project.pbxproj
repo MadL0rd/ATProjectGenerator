@@ -69,6 +69,8 @@
 		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
 		89709976269569BC0082F99D /* UI+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89709975269569BC0082F99D /* UI+resources.swift */; };
 		897099F0269583AC0082F99D /* String+isEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897099EF269583AC0082F99D /* String+isEmail.swift */; };
+		8975AB8C2776ECDE0042566E /* DependencyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975AB8B2776ECDD0042566E /* DependencyObject.swift */; };
+		8975AB92277750E10042566E /* DependencyObjectAccounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975AB91277750E10042566E /* DependencyObjectAccounter.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
@@ -204,6 +206,8 @@
 		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
 		89709975269569BC0082F99D /* UI+resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+resources.swift"; sourceTree = "<group>"; };
 		897099EF269583AC0082F99D /* String+isEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isEmail.swift"; sourceTree = "<group>"; };
+		8975AB8B2776ECDD0042566E /* DependencyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyObject.swift; sourceTree = "<group>"; };
+		8975AB91277750E10042566E /* DependencyObjectAccounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyObjectAccounter.swift; sourceTree = SOURCE_ROOT; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 				89F00A4A2542E16200D482F6 /* ApplicationLayer */,
 				8940644626122B7600DC682F /* CoreLayer */,
 				89F00A3A2542E16200D482F6 /* BusinessLogicLayer */,
+				8975AB8E277750B20042566E /* Entities */,
 				89F00A542542E16200D482F6 /* ModelsLayer */,
 				89F00A582542E16200D482F6 /* PresentationLayer */,
 				89F00A302542E16200D482F6 /* Constants */,
@@ -369,6 +374,7 @@
 		8940644626122B7600DC682F /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8975AB8A2776ECDD0042566E /* DependenciesManager */,
 				8940644726122B7600DC682F /* NetworkService */,
 			);
 			path = CoreLayer;
@@ -562,6 +568,22 @@
 				894065E8261328E100DC682F /* Gilroy-Bold.ttf */,
 			);
 			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		8975AB8A2776ECDD0042566E /* DependenciesManager */ = {
+			isa = PBXGroup;
+			children = (
+				8975AB8B2776ECDD0042566E /* DependencyObject.swift */,
+				8975AB91277750E10042566E /* DependencyObjectAccounter.swift */,
+			);
+			path = DependenciesManager;
+			sourceTree = "<group>";
+		};
+		8975AB8E277750B20042566E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		8981FD7E2656EBE400993B65 /* AlertPresentationViewController */ = {
@@ -827,6 +849,7 @@
 			buildPhases = (
 				B9EBAA770C4B053E82FA1B2D /* [CP] Check Pods Manifest.lock */,
 				894064F9261230B600DC682F /* User stories modules accounting */,
+				8975AB8D2777507F0042566E /* Shared dependencies accounting */,
 				55CE2F9D2520D6BD00FDE7A2 /* Rswift */,
 				0A19E07C48C7C4F98F7EDF1F /* Swiftlint */,
 				2525B7EE3A8AE1AD7AF73DB9 /* Sources */,
@@ -984,7 +1007,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/ModulesAccounter.sh\"\n";
+			shellScript = "\"$SRCROOT/BuildPhasesScripts/ModulesAccounter.sh\"\n";
+		};
+		8975AB8D2777507F0042566E /* Shared dependencies accounting */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Shared dependencies accounting";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/BuildPhasesScripts/DependenciesAccounter.sh\"\n";
 		};
 		B9EBAA770C4B053E82FA1B2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1084,6 +1125,7 @@
 				89B6238126CEDC6800CD2BEA /* MainMenuCoordinator.swift in Sources */,
 				89B6237B26CEDC6800CD2BEA /* SettingsTableViewCell.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
+				8975AB8C2776ECDE0042566E /* DependencyObject.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
 				89B6237726CEDC6800CD2BEA /* SettingsViewModel.swift in Sources */,
 				89B6237E26CEDC6800CD2BEA /* SettingsInput.swift in Sources */,
@@ -1104,6 +1146,7 @@
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
 				89B623A326CEF1D100CD2BEA /* AboutUsViewController.swift in Sources */,
 				89B623A126CEF1D100CD2BEA /* AboutUsInput.swift in Sources */,
+				8975AB92277750E10042566E /* DependencyObjectAccounter.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
 				89B6239C26CEF1D100CD2BEA /* AboutUsViewModelProtocol.swift in Sources */,
 				89B6237826CEDC6800CD2BEA /* SettingsCoordinatorProtocol.swift in Sources */,

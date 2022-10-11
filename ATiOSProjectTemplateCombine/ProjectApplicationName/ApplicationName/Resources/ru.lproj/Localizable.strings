@@ -1,0 +1,42 @@
+
+// LimitatableTextView
+"limit" = "осталось";
+"character" = "символ";
+"characterLess5" = "символа";
+"characters" = "символов";
+
+// Network
+"networkError.cannotParceData" = "Не удалось получить данные";
+"networkError.unknown" = "Неизвестная ошибка";
+"networkError.connectionProblems" = "Кажется, у вас есть проблемы с подключением к интернету";
+"networkError.wrongCode" = "Неправильный код";
+"networkError.wrongEmail" = "Некорректная почта";
+"networkError.unknownError" = "Неизвестная ошибка";
+"networkError.badToken" = "Проблема с доступом к Вашему аккаунту";
+"networkError.badRoute" = "Нет такого URL";
+"networkError.badRequestDataFormat" = "Внутренняя ошибка сервера или неверный формат данных запроса";
+
+// Alerts
+"error" = "Ошибка!";
+"ok" = "OK";
+"cancel" = "Отмена";
+"continue" = "Продолжить";
+"select" = "Выбрать";
+"choose color" = "Выбор цвета";
+
+// Other
+"announcementText" = "Будет добавлено в следующих версиях";
+
+// Settings
+"settingsTitle" = "Настройки";
+"settingsSupport" = "Поддержка";
+"settingsRateApp" = "Оценить приложение";
+"settingsAboutUs" = "О нас";
+"settingsUserAgreement" = "Пользовательское соглашение";
+"settingsPrivacyPolicy" = "Политика конфиденциальности";
+"settingsVersion" = "Version";
+"settingsNotAffiliated" = "Это приложение не связано с Random Inc.";
+
+// About us
+"aboutUsTitle" = "О нас";
+"aboutUsText" = "Всем привет!\nЕсли у вас есть какие-либо вопросы, то связаться со мной можно написаы на этот почтовый ящик";
