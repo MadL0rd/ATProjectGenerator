@@ -668,9 +668,9 @@
 		89B6237026CEDC6800CD2BEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				89B6237326CEDC6800CD2BEA /* MainMenuViewController.swift */,
 				89B6237126CEDC6800CD2BEA /* MainMenuView.swift */,
 				89B6237226CEDC6800CD2BEA /* TabBarModuleTransitionHandler.swift */,
-				89B6237326CEDC6800CD2BEA /* MainMenuViewController.swift */,
 				89B6237426CEDC6800CD2BEA /* CustomTabBar.swift */,
 			);
 			path = View;
